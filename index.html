@@ -25,6 +25,7 @@
   <video id="live-player" width=600 height=300 class="video-js vjs-default-skin" controls></video>
   <p>Livesim - multi-subs</p>
   <video id="live-subs-player" width=600 height=300 class="video-js vjs-default-skin" controls></video>
+  
   <script src="node_modules/video.js/dist/video.js"></script>
   <script src="node_modules/dashjs/dist/dash.all.debug.js"></script>
   <script src="dist/videojs-dash.js"></script>
@@ -50,30 +51,30 @@
         }
       });
 
-    player.ready(function() {
+    player.ready(function () {
       player.src({
-        src: 'http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps.mpd',
+        src: 'https://irer2bluh2.execute-api.us-east-1.amazonaws.com/jennyfer/csci/v3/v4gatewayvideogen/Jo4gA6j84jiTRg',
         type: 'application/dash+xml'
       });
     });
 
-    playerOcean.ready(function() {
+    playerOcean.ready(function () {
       playerOcean.src({
-        src: 'http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps.mpd',
+        src: 'https://irer2bluh2.execute-api.us-east-1.amazonaws.com/jennyfer/csci/v3/v4gatewayvideogen/Jo4gA6j84jiTRg',
         type: 'application/dash+xml'
       });
     });
 
-    angelOne.ready(function(){
+    angelOne.ready(function () {
       angelOne.src({
-        src: 'https://storage.googleapis.com/shaka-demo-assets/angel-one/dash.mpd',
+        src: 'https://irer2bluh2.execute-api.us-east-1.amazonaws.com/jennyfer/csci/v3/v4gatewayvideogen/Jo4gA6j84jiTRg',
         type: 'application/dash+xml'
       });
     });
 
-    angelOneDrm.ready(function(){
+    angelOneDrm.ready(function () {
       angelOneDrm.src({
-        src: 'https://storage.googleapis.com/shaka-demo-assets/angel-one-widevine/dash.mpd',
+        src: 'https://irer2bluh2.execute-api.us-east-1.amazonaws.com/jennyfer/csci/v3/v4gatewayvideogen/Jo4gA6j84jiTRg',
         type: 'application/dash+xml',
         keySystemOptions: [
           {
@@ -86,20 +87,21 @@
       });
     });
 
-    livePlayer.ready(function(){
+    livePlayer.ready(function () {
       livePlayer.src({
-        src: 'http://livesim.dashif.org/livesim/mup_30/testpic_2s/Manifest.mpd',
+        src: 'https://irer2bluh2.execute-api.us-east-1.amazonaws.com/jennyfer/csci/v3/v4gatewayvideogen/Jo4gA6j84jiTRg',
         type: 'application/dash+xml'
       });
     });
 
-    liveSubsPlayer.ready(function(){
+    liveSubsPlayer.ready(function () {
       liveSubsPlayer.src({
-        src: 'https://livesim.dashif.org/dash/vod/testpic_2s/multi_subs.mpd',
+        src: 'https://irer2bluh2.execute-api.us-east-1.amazonaws.com/jennyfer/csci/v3/v4gatewayvideogen/Jo4gA6j84jiTRg',
         type: 'application/dash+xml'
       });
     });
-  </script>
+ 
+ </script>
 </body>
 
 </html>

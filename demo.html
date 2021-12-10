@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Test Reproductor</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="node_modules/video.js/dist/video-js.css">
+</head>
+
+<body>
+  <p>Demo</p>
+  <video id="player" width=600 height=300 class="video-js vjs-default-skin" controls></video>
+  
+  <script src="node_modules/video.js/dist/video.js"></script>
+  <script src="node_modules/dashjs/dist/dash.all.debug.js"></script>
+  <script src="dist/videojs-dash.js"></script>
+
+  <script>
+    var
+      player = videojs('player', {
+        html5: {
+          dash: {
+            limitBitrateByPortal: true
+          }
+        }
+      });
+    
+    player.ready(function () {
+      player.src({
+        src: 'https://irer2bluh2.execute-api.us-east-1.amazonaws.com/jennyfer/csci/v3/v4gatewayvideogen/Jo4gA6j84jiTRg',
+        type: 'application/dash+xml'
+      });
+    });
+
+ </script>
+</body>
+
+</html>
